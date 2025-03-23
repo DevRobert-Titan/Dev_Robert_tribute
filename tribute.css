@@ -1,0 +1,179 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
+  height: 100vh;  /* Ensure it doesn't exceed viewport height */
+  margin: 0;
+  font-size: 23px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background: linear-gradient(to right, #A50044 50%, #004D98 60%);
+  background-attachment: fixed;
+  min-height: 100vh;   
+}
+
+#main {
+  flex-grow: 1; /* Allows main content to expand */
+  width: 90%;
+  height: auto;
+  max-width: 1200px;
+  margin: 0 auto;
+  border: none;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  color: black;
+  background-color: rgb(43, 154, 228);
+}
+
+
+#image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  object-fit: contain;
+  max-height: 500px; /* Adjust this value to control how tall the image can be */
+}
+
+
+#img-div {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+  .intro {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    max-width: 800px; /* Prevents too much stretching */
+    margin: 0 auto; /* Centers it */
+    padding-left: 20px;
+  }
+
+.intro p {
+  max-width: 400px; /* Adjust this to control the text width */
+  line-height: 1.5; /* Improves readability */
+  font-style: italic;
+}
+
+
+.intro img {
+  width: 300px; /* Adjust as needed */
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+
+#title, #tribute-info, #Iconic-quote{
+  text-align: center;
+  color: rgb(240, 240, 240);
+  font-size: 28px;
+}
+span{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 800;
+  color: rgb(0, 0, 0);
+}
+
+#iconic-quote {
+  font-size: clamp(16px, 4vw, 24px); /* Adjusts size dynamically */
+  font-style: italic;
+  font-weight: 500;
+  text-align: center;
+  color: rgb(230, 230, 230);
+  margin: 30px auto;
+  max-width: 90%; /* Allows it to shrink on smaller screens */
+  line-height: 1.6;
+  background: linear-gradient(to right, #e40707 30%, #0057ad 70%);
+  padding: 15px;
+  border-radius: 22px;
+  word-wrap: break-word; /* Ensures long words wrap */
+}
+p{
+  color: rgb(0, 0, 0);
+  margin-left: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: rgb(30, 130, 200); /* Matches the theme */
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 20px;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+}
+
+@media (max-width: 768px) {
+  body {
+    background-size: auto; /* Adjust for smaller screens */
+    background-attachment: scroll; /* Fix mobile issue */
+  }
+}
+/* Adjust styles for tablets */
+@media (max-width: 768px) {
+  body {
+    font-size: 20px; /* Reduce font size */
+  }
+
+  .intro {
+    flex-direction: column; /* Stack elements */
+    text-align: center;
+  }
+}
+
+/* Adjust styles for mobile phones */
+@media (max-width: 480px) {
+  body {
+    font-size: 18px;
+  }
+
+  #main {
+    width: 95%;
+  }
+
+  .intro img {
+    width: 80%; /* Make the image smaller */
+  }
+}
+body {
+
+  font-size: clamp(14px, 2vw, 23px);
+
+}
+
+#title, #tribute-info {
+
+  font-size: clamp(20px, 4vw, 28px);
+
+}
+
+.intro p {
+
+  font-size: clamp(14px, 3vw, 18px);
+
+}
+@media (max-width: 500px) {
+
+  #iconic-quote {
+
+    font-size: 16px;
+
+    padding: 10px;
+
+  }
+
+  #title, #tribute-info {
+
+    font-size: 20px;
+
+  }
+
+}
